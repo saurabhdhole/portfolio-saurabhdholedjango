@@ -1,0 +1,129 @@
+{% load static %}
+
+<html lang="en">
+<head>
+
+    <title>Saurabh Dhole</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Saurabh Dhole" />
+    <meta name="keywords" content="Software Developer" />
+    <meta name="keywords" content="Full Stack Developer" />
+    <meta name="description" content="Saurabh Dhole a Full Stack Developer" />
+    <meta name="description" content="Saurabh Dhole" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/StyleSheet1.css' %}"/>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="https://threejsfundamentals.org/threejs/resources/threejs/r105/three.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131360972-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131360972-1');
+    </script>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_E3ZpD8tzMyHWlBDFGhRwN");
+        })();
+    </script>
+
+    <script src="{% static 'js/smtp.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage" style="padding-top: 5px;">
+                    <img src="{% static 'images/transparent_name 4.png' %}" class="img-responsive logoLayout"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about_me">ABOUT ME!</a></li>
+                    <li><a href="#my_skills">SKILLS</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
+                    <li><a href="#my_timeline">TIMELINE</a></li>
+                    <li><a href="#my_projects">PROJECTS</a></li>
+                    <li><a href="#my_blogs">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home container - > add image and title-->
+    <div id="home" class="container home_image">
+        <h2 class="dev_header">Full Stack Developer</h2>
+        <img src="{% static 'images/saurabhdhole.jpg' %}" class="home_image">
+        <!-- <canvas id="c"></canvas>-->
+    </div>
+
+
+    {% include  "about.html" %}
+
+    {% include  "my_skills.html" %}
+
+    {% include  "experience.html" %}
+
+    {% include  "timeline.html" %}
+
+    {% include  "projects.html" %}
+
+    {% include  "blogs.html" %}
+
+    {% include  "contacts.html" %}
+
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <!--<div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="myframe" style="width: 100%; height: 320px;"></iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <br>
+        <br>
+    </footer>
+
+</body>
+</html>

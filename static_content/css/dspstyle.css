@@ -1,0 +1,66 @@
+﻿.myheader {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    display: inline-flex;
+}
+
+.contentWidth {
+    width: 100%;
+}
+
+.nameLayout {
+    padding-left: 2%;
+    width: 20%;
+    min-width: 100px;
+    height: 41px;
+    padding-top: 5px;
+    float: left;
+}
+
+.menuLayout {
+    float: right;
+    display: -webkit-inline-box;
+    width: 20%;
+    position: fixed;
+    right:0px;
+}
+
+.bodyOutLayout {
+    margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    /*margin: 0;
+    padding: 0;*/
+    width: 200px;
+    /*background-color: #f1f1f1;*/
+}
+
+li a {
+    /*display: block;*/
+    /*color: #000;*/
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+
+}
+
+    /* Change the link color on hover */
+    li a:hover {
+        /*background-color: #555;*/
+        color: rgb(210, 210, 210);
+        height: 50px;
+        /*display:block;*/
+    }
+
+.projectTitle{
+    color:white !important;
+    background-color:#333 !important;
+    border-radius:2pt;
+}
+
+.myPadding{
+    padding:20px !important;
+}
